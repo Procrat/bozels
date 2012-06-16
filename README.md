@@ -16,7 +16,7 @@ volgende klassen die met elkaar interageren:
 Er zijn twee modellen, Simulation en LaunchModel, die de hoofdmodellen zijn en
 doen wat hun naam doet vermoeden. Simulation zorgt voor alles wat met draden,
 het pauzeren en herstarten te maken heeft. Ook de hoofdlus bevindt zich daar
-dus. Daarin wordt om de <tijdstap> seconden een stap vooruit gezet in de wereld,
+dus. Daarin wordt om de &lt;tijdstap&gt; seconden een stap vooruit gezet in de wereld,
 worden eventuele gebroken objecten verwijderd, wordt er eventueel een nieuwe
 bozel op het lanceerplatform gezet en wordt er gekeken of het level nog niet ten
 einde is.
@@ -87,16 +87,18 @@ hieronder een kort overzichtje gemaakt met de componentenhiërarchie en hun bij-
 horende layoutmanager. Wat elk van hen doet, kan je gewoonweg zien bij het open-
 en van het programma.
 
+```
 ContentPane(BorderLayout)
-	-> CENTER: GamePanel
+    -> CENTER: GamePanel
     -> SOUTH: ConfigurationPanel(BorderLayout)
-		-> WEST: Pauze- en herstartenknop
+        -> WEST: Pauze- en herstartenknop
         -> CENTER: JTabbedPane met twee soorten tabs
             -> WorldSettingsPanel(GroupLayout)
             -> UnitSettingsPanel(BorderLayout)
                 -> WEST: Lijst met soorten
                 -> CENTER: UnitSettingsFieldPanel(GroupLayout)
                     -> Breakable- of Unbreakable-
+```
 
 
 Configuratie en instellingen
