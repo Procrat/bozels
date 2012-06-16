@@ -88,9 +88,9 @@ horende layoutmanager. Wat elk van hen doet, kan je gewoonweg zien bij het open-
 en van het programma.
 
 ContentPane(BorderLayout)
-    -> CENTER: GamePanel
+	-> CENTER: GamePanel
     -> SOUTH: ConfigurationPanel(BorderLayout)
-        -> WEST: Pauze- en herstartenknop
+		-> WEST: Pauze- en herstartenknop
         -> CENTER: JTabbedPane met twee soorten tabs
             -> WorldSettingsPanel(GroupLayout)
             -> UnitSettingsPanel(BorderLayout)
